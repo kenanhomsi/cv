@@ -1,22 +1,27 @@
+:root{
+    --main-color:var(--second-color);
+    --second-color:#303030;
+}
 *{
     box-sizing: border-box;
 }
 body{
     font-family: 'Oxygen',sans-serif;
-    background-color: #26303A;
+    /* background-color: #26303A; */
+    background-color: white;
     margin: 0;
     position: relative;
 }
 .back-color{
     position: absolute;
     z-index: -1;
-    background-color: #EFA71F;
+    background-color: var(--second-color);
     width: 100%;
     height: 400px;
 }
 .header i{
     margin-right: 10px;
-    color: #EFA71F;
+    color: var(--second-color);
 }
 .sec{
     margin: 50px 0px;
@@ -27,7 +32,7 @@ body{
     position: relative;
 }
 .line i{
-    color: #EFA71F;
+    color: var(--second-color);
     margin-right:5px ;
 }
 .sec_title::after{
@@ -44,7 +49,8 @@ body{
 
     display: flex;
     flex-direction: row;
-    color: white;
+    /* color: white; */
+    color: black;
     padding: 30px;
 
 }
@@ -54,7 +60,7 @@ body{
 }
 
 .main div{
-    background-color: #EFA71F;
+    background-color: var(--second-color);
     width: 350px;
     text-align: center;
     padding: 7px 0px;
@@ -79,7 +85,7 @@ body{
     height: 100%;
     top:0px;
     left: 0px;
-    background-color: #EFA71F;
+    background-color: var(--second-color);
 }
 .language .sec-body{
     display: flex;
@@ -104,7 +110,7 @@ body{
     text-align: center;
 }
 .hob p{
-    background-color: #EFA71F;
+    background-color: var(--second-color);
     text-align: center;
     font-size: 18px;
     padding: 4px 0px;
@@ -119,7 +125,7 @@ body{
 }
 .project .sec-body a,  a{
     text-decoration: none;
-    color: #EFA71F;
+    color: #ff4343;
 }
 .right{
     padding-top: 70px;
@@ -127,9 +133,10 @@ body{
 }
 .summary{
     line-height: 1.8;
+    color: white;
 }
 span{
-    color: #EFA71F;
+    color: var(--second-color);
 }
 .up{
     display: flex;
@@ -139,12 +146,12 @@ span{
 .dow progress{
     width: 100%;
     height: 15px;
-    background:  #efa71f;
+    background:  var(--second-color);
        
 }
-progress::-moz-progress-bar { background: #efa71f; }
-progress::-webkit-progress-value { background: #efa71f; }
-progress { color: #efa71f; }
+progress::-moz-progress-bar { background: var(--second-color); }
+progress::-webkit-progress-value { background: var(--second-color); }
+progress { color: var(--second-color); }
 .future{
     position: relative;
 }
@@ -167,4 +174,15 @@ progress { color: #efa71f; }
 .img2{
     width: 200px!important;
     margin-left: 80px;
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.experience span{
+    font-size: 25px;
+    display: block;
+    font-weight: bolder;
+    color: black;
 }
